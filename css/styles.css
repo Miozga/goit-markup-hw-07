@@ -46,14 +46,16 @@ img {
   display: block;
 }
 .section {
-  padding: 94px 0;
+  padding: 72px 0;
 }
 .container {
-  max-width: 1200px;
+  max-width: 396px;
   padding-left: 15px;
   padding-right: 15px;
   width: 100%;
   margin: 0 auto;
+  display: flex;
+  flex-direction: column;
 }
 body {
   font-family: var(--main-font);
@@ -68,7 +70,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 80px;
+  height: 70px;
 }
 .nav {
   display: flex;
@@ -81,6 +83,8 @@ header {
   line-height: 1.46;
   letter-spacing: 0.03em;
   color: var(--link-color);
+  display: flex;
+  justify-content: flex-start;
 }
 .studio {
   font-family: var(--secondary-font);
@@ -151,7 +155,7 @@ header {
 .main-section {
   background-image: radial-gradient(rgba(47, 48, 58, 0.4) 100%, rgba(255, 255, 255, 0) 0%),
     url(../images/background.jpg);
-  max-width: 1600px;
+  max-width: 428px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -203,18 +207,24 @@ header {
 .lorem {
   padding-bottom: 0;
   line-height: 1.14;
+  display: flex;
+  flex-direction: column;
 }
 .paragraphs-container {
   gap: 30px;
   display: flex;
   justify-content: space-between;
+  flex-direction: column;
 }
 .paragraphs-title {
   padding-top: 30px;
   font-weight: 700;
-  font-size: 14px;
+  font-size: 14px bold;
   line-height: 1.14;
   letter-spacing: 0.03em;
+  display: flex;
+  /*flex-direction: column;*/
+  justify-content: center;
 }
 .paragraphs-text {
   font-size: 14px;
@@ -225,6 +235,8 @@ header {
 }
 .our-team {
   background: var(--background-white);
+  display: flex;
+  flex-direction: column;
 }
 .section-title {
   text-align: center;
@@ -239,6 +251,11 @@ header {
   gap: 30px;
   display: flex;
   justify-content: space-between;
+}
+.paragraphs-container-ourteam {
+  gap: 30px;
+  display: flex;
+  flex-direction: column;
 }
 .our-team-image {
   box-shadow: 0px 4px 4px 0px var(--color-black-shadow);
@@ -281,8 +298,10 @@ header {
 }
 
 .custumers-container {
-  display: flex;
+  display: inline-block;
   justify-content: space-between;
+  flex-direction: column;
+  padding-top: 35px;
 }
 .customers {
   width: 106px;
@@ -394,6 +413,8 @@ header {
 .logo-footer {
   display: inline-block;
   padding-bottom: 20px;
+  display: flex;
+  justify-content: center;
 }
 .address {
   font-style: normal;
@@ -466,6 +487,8 @@ header {
   text-align: left;
   color: var(--color-white);
   padding-bottom: 20px;
+  display: flex;
+  justify-content: center;
 }
 label {
   display: flex;
@@ -660,6 +683,7 @@ select {
 
   transition: var(--tr-transition);
 }
+
 .blue-button-subscribe:hover {
   background-color: var(--color-blue-button-hover);
   box-shadow: 1px 4px 6px 0px var(--color-black) 0.16;
