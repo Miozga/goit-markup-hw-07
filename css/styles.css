@@ -46,16 +46,14 @@ img {
   display: block;
 }
 .section {
-  padding: 72px 0;
+  padding: 94px 0;
 }
 .container {
-  max-width: 396px;
+  max-width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   width: 100%;
   margin: 0 auto;
-  display: flex;
-  flex-direction: column;
 }
 body {
   font-family: var(--main-font);
@@ -70,7 +68,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 70px;
+  height: 80px;
 }
 .nav {
   display: flex;
@@ -83,8 +81,6 @@ header {
   line-height: 1.46;
   letter-spacing: 0.03em;
   color: var(--link-color);
-  display: flex;
-  justify-content: flex-start;
 }
 .studio {
   font-family: var(--secondary-font);
@@ -94,6 +90,14 @@ header {
   display: flex;
   align-items: center;
   column-gap: 46px;
+}
+.menu {
+  display: none;
+}
+@media screen and (min-width: 1200px) {
+  .menu {
+    display: flex;
+  }
 }
 .menu-item {
   font-weight: 700;
@@ -133,6 +137,15 @@ header {
   letter-spacing: 0.02em;
   color: var(--paragraph-text-color);
 }
+
+.contact {
+  display: none;
+}
+@media screen and (min-width: 1200px) {
+  .contact {
+    display: flex;
+  }
+}
 .phone {
   margin-right: 10px;
   color: var(--color-grey);
@@ -155,7 +168,7 @@ header {
 .main-section {
   background-image: radial-gradient(rgba(47, 48, 58, 0.4) 100%, rgba(255, 255, 255, 0) 0%),
     url(../images/background.jpg);
-  max-width: 428px;
+  max-width: 1600px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -207,24 +220,28 @@ header {
 .lorem {
   padding-bottom: 0;
   line-height: 1.14;
-  display: flex;
-  flex-direction: column;
 }
 .paragraphs-container {
   gap: 30px;
   display: flex;
   justify-content: space-between;
-  flex-direction: column;
 }
+/*.custumers-container {
+  display: grid;
+  grid-template: auto / repeat(2, 1fr);
+}
+
+@media (min-width: 1200px) {
+  .custumers-container {
+    grid-template: auto / repeat(4, 1fr);
+  }
+}*/
 .paragraphs-title {
   padding-top: 30px;
   font-weight: 700;
-  font-size: 14px bold;
+  font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
-  display: flex;
-  /*flex-direction: column;*/
-  justify-content: center;
 }
 .paragraphs-text {
   font-size: 14px;
@@ -233,10 +250,16 @@ header {
   color: var(--paragraph-text-color);
   padding-top: 10px;
 }
+.l-i-container {
+  display: none;
+}
+@media screen and (min-width: 1200px) {
+  .l-i-container {
+    display: flex;
+  }
+}
 .our-team {
   background: var(--background-white);
-  display: flex;
-  flex-direction: column;
 }
 .section-title {
   text-align: center;
@@ -252,10 +275,13 @@ header {
   display: flex;
   justify-content: space-between;
 }
-.paragraphs-container-ourteam {
-  gap: 30px;
-  display: flex;
-  flex-direction: column;
+.what-we-do {
+  display: none;
+}
+@media screen and (min-width: 1200px) {
+  .what-we-do {
+    display: flex;
+  }
 }
 .our-team-image {
   box-shadow: 0px 4px 4px 0px var(--color-black-shadow);
@@ -298,10 +324,8 @@ header {
 }
 
 .custumers-container {
-  display: inline-block;
+  display: flex;
   justify-content: space-between;
-  flex-direction: column;
-  padding-top: 35px;
 }
 .customers {
   width: 106px;
@@ -413,8 +437,6 @@ header {
 .logo-footer {
   display: inline-block;
   padding-bottom: 20px;
-  display: flex;
-  justify-content: center;
 }
 .address {
   font-style: normal;
@@ -487,8 +509,6 @@ header {
   text-align: left;
   color: var(--color-white);
   padding-bottom: 20px;
-  display: flex;
-  justify-content: center;
 }
 label {
   display: flex;
@@ -683,7 +703,6 @@ select {
 
   transition: var(--tr-transition);
 }
-
 .blue-button-subscribe:hover {
   background-color: var(--color-blue-button-hover);
   box-shadow: 1px 4px 6px 0px var(--color-black) 0.16;
@@ -760,4 +779,33 @@ label > select {
 .checkbox {
   width: 16px;
   height: 16px;
+}
+/*-------------mobile-nav-------*/
+.menu-wrapper {
+  position: fixed;
+  inset: 0;
+  translate: -100% 0 0;
+  transition: 400ms;
+  background-color: white;
+}
+.menu-wrapper.is-open {
+  tranlate: none;
+}
+.menu-button {
+  position: absolute;
+  inset: 1em 1em auto auto;
+  cursor: pointer;
+}
+.generic-button {
+  border-radius: 0.5em;
+}
+
+.page-nav {
+  display: none;
+  justify-content: flex-end;
+}
+@media screen and (max-width: 1200px) {
+  .page-nav {
+    display: flex;
+  }
 }
