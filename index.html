@@ -1,8 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" >
   <head>
- <script src="js/modal.js"  defer></script>
- <script src="js/mobile-menu.js" defer></script>
+
 
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -25,7 +24,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/styles.css" />
-  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   </head>
   <body>
     <header>
@@ -58,76 +57,19 @@
             >
           </li>
         </ul>
-        <!--------------- -!>        HAMBURGER</!-->
-
-      </div>
-     <div class="hamgurger">
-      <nav class="page-nav">
+        <!----------------------------------------------------HAMBURGER-->
+  
   <button class="nav-button js-open-menu">
     <span><svg class="icon-label"
                     width="18"
                     height="24">
                    <use href="images/charm_menu-hamburger.svg#Vector" use></use>
-                   </svg></span></button>
-  <div class="menu-wrapper js-menu-container">
-    <button class="menu-button js-close-menu"><svg class="icon-label"
-                    width="18"
-                    height="24">
-                   <use href="images/charm_menu-hamburger.svg#Vector" use></use>
-                   </svg></button>
-    <ul class="menu">
-      <ul>
-      <li><a href="./index.html">Agency</a></li>
-      <li><a href="./portfolio.html">Portfolio</a></li>
-      <li><a href="#">Contact</a></li></ul>
-<ul class="contact">
-          <li>
-            <a class="contact-item" href="mailto:info@devstudio.com">
-  
-              </svg>
-              info@devstudio.com</a
-            >
-          </li>
-          <li>
-            <a class="contact-item" href="tel:+48111111111"
-              >+48 111 111 111</a>
-          </li>
-        </ul>
-        <ul class="social-container">
-                <li class="social-links">
-                  <a href="#">
-                    <svg width="20px" height="20px">
-                      <use href="./images/social.svg#icon-instagram-2-2"></use>
-                    </svg>
-                  </a>
-                </li>
+                   </svg></span>
+                  </button>
+    
 
-                <li class="social-links">
-                  <a href="#">
-                    <svg width="20px" height="20px">
-                      <use href="./images/social.svg#icon-twitter-1-1"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li class="social-links">
-                  <a href="#">
-                    <svg width="20px" height="20px">
-                      <use href="./images/social.svg#icon-facebook-1-2"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li class="social-links">
-                  <a href="#">
-                    <svg width="20px" height="20px">
-                      <use href="./images/social.svg#icon-linkedin-1-2"></use>
-                    </svg>
-                  </a>
-                </li>
-              </ul>
-
-
-    </menu></div></div>
-</nav>
+      </div>
+     
     </header>
     <main>
       <section class="main-section section ">
@@ -489,11 +431,7 @@
 
 
 
-
-
-
-
-    <footer class="footer container">
+    <footer class="footer">
       <div class="footer-flex">
         <a class="logo logo-footer" href="index.html"
             >Web<span class="studio-footer">Studio</span></a>
@@ -505,7 +443,6 @@
        <div class="footer-social-container">
       
           <h3 class="footer-title">Dołącz do nas</h3>
-          <br />
           <ul class="footer-icons">
             <li class="social-links-footer">
               <a href="#">
@@ -539,27 +476,85 @@
             </li>
           </ul>
       </div>
-        <div class=" form-f">
-         <form class="">
+        
+         <form class=" form-f">
           <h3 class="footer-title">Subscribe</h3>
-          <ul class="paragraphs-container-secondary  footer-social-container footer-icons">
-            <li >
+          
           <input class="input-email" id="email" type="email" name="email" placeholder="E-mail" required="" />
-            </li>
-
-            <li>
+ 
              <button class="blue-button-subscribe" type="submit">
             Subscribe
             <svg class="icons" width="20px" height="20px" class="position-social">
               <use href="./images/icons-labels.svg#icon-Frame-3"></use>
             </svg>
           </button>
-            </li>
-            </ul>
-  
-          </form>
-        </div>
+        </form>
+        
     </footer>
-   
+
+    <!-----------------------------------------------mobile menu hamnurger--->
+   <div class="hamgurger">
+      <nav class="page-nav">
+
+  <div class="menu-wrapper js-menu-container">
+    <button class="menu-button js-close-menu"><svg class="icon-label"
+                    width="18"
+                    height="24">
+                   <use href="images/charm_menu-hamburger.svg#Vector" use></use>
+                   </svg></button>
+    <ul class="menu">
+      <ul>
+      <li><a href="./index.html">Agency</a></li>
+      <li><a href="./portfolio.html">Portfolio</a></li>
+      <li><a href="#">Contact</a></li></ul>
+<ul class="c ontact">
+          <li>
+            <a class="contact-item" href="mailto:info@devstudio.com">
+  
+              </svg>
+              info@devstudio.com</a
+            >
+          </li>
+          <li>
+            <a class="contact-item" href="tel:+48111111111"
+              >+48 111 111 111</a>
+          </li>
+        </ul>
+        <ul class="social-container">
+                <li class="social-links">
+                  <a href="#">
+                    <svg width="20px" height="20px">
+                      <use href="./images/social.svg#icon-instagram-2-2"></use>
+                    </svg>
+                  </a>
+                </li>
+
+                <li class="social-links">
+                  <a href="#">
+                    <svg width="20px" height="20px">
+                      <use href="./images/social.svg#icon-twitter-1-1"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social-links">
+                  <a href="#">
+                    <svg width="20px" height="20px">
+                      <use href="./images/social.svg#icon-facebook-1-2"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social-links">
+                  <a href="#">
+                    <svg width="20px" height="20px">
+                      <use href="./images/social.svg#icon-linkedin-1-2"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+
+
+    </menu></div></div>
+     <script src="./js/modal.js"  defer></script>
+ <script src="./js/mobile-menu.js" defer></script>
   </body>
 </html>
