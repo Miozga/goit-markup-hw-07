@@ -71,12 +71,11 @@ header {
   border-bottom: 1px solid #ececec;
 }
 
-.container-header {
+.nav, .menu, .contact {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  height: ;
 }
+
 .nav {
   display: flex;
   column-gap: ;
@@ -96,7 +95,7 @@ header {
 .menu {
   display: flex;
   align-items: center;
-  column-gap: ;
+  column-gap:
 }
 .menu-item {
   font-weight: 700;
@@ -127,7 +126,9 @@ header {
 }
 .contact {
   display: flex;
+  flex-direction: column;
   gap: 50px;
+  justify-content: center;
 }
 .contact-item {
   font-weight: 500;
@@ -214,7 +215,6 @@ header {
   line-height: 1.14;
 }
 .paragraphs-container {
-  gap: ;
   display: flex;
   flex-direction: column;
 }
@@ -709,6 +709,8 @@ select {
   cursor: pointer;
 
   transition: var(--tr-transition);
+
+ 
 }
 .blue-button-subscribe:hover {
   background-color: var(--color-blue-button-hover);
@@ -763,7 +765,6 @@ label > select {
   border-color: var(--color-blue);
 }
 .icon-label {
-  position: absolute;
   left: 16px;
   top: 7px;
 }
@@ -805,7 +806,7 @@ label > select {
   position: fixed;
   top: 0;
   left: 0;
-  width: 428px;
+  width: 100%;
   height: 100%;
   padding: 32px;
   background-color: var(--color-white);
@@ -837,3 +838,182 @@ label > select {
 .footer p {
   color: var(--color-footer-mobile);
 }
+.customers-box {
+  padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+  width: 396px;
+  height: 520px;
+}
+  .customers-container {
+    display: grid;
+  grid-template-columns: repeat(3, 1fr)
+  }
+  .customers-container li {
+    margin-top: 72px;
+    margin-bottom: 72px;
+    width: 190px;
+    height: 88px;
+  }
+
+      .subscribe-tablet { display: flex;
+    flex-direction:column;
+    justify-content: space-between;
+   margin-top: 16px;}
+
+/*-----------------------------------TABLET-*/
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .menu,
+  .contact {
+    display: block;
+  }
+  .nav-button {
+    display: none;
+  }
+  .container-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+  }
+  .nav {
+    display: flex;
+    column-gap: 20px;
+    justify-content: center;
+  }
+  .menu {
+    display: flex;
+    align-items: center;
+    column-gap: 46px;
+  }
+  .modal-body {
+    width: 408px;
+  }
+  .lorem {
+    gap: 72px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .paragraphs-container {
+  display: flex;
+  flex-direction: row;
+flex-wrap: wrap;
+justify-content: center;}
+.paragraphs-container li {
+  width: 356px;
+
+}
+  .paragraphs-title {
+    width: 264px;
+    display: flex;
+    justify-content: start;
+    margin-top: 0;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+  }
+  .paragraphs-text {
+    font-size: 14px;
+    line-height: 1.46;
+    letter-spacing: 0.03em;
+    color: var(--paragraph-text-color);
+    padding-top: 10px;
+    margin-bottom: 72px;
+    text-align: left;
+    height: auto;
+    gap: 8px;
+  }
+/*------------------team-*/
+.paragraphs-container-secondary {
+
+ display: flex;
+  flex-direction: row;
+flex-wrap: wrap;
+justify-content: center;
+}
+
+
+.paragraphs-container-secondary li {}
+  .l-i-container {
+    background-color: var(--background-white);
+    height: auto;
+    width: 356px;
+    gap: 72px;
+  }
+
+/*--------------------CUSTOMERS-*/
+.customers-box {
+
+  width: 552px;
+  height: 360px;
+}
+  .customers-container {
+    display: grid;
+  grid-template-columns: repeat(2, 1fr)
+  }
+  .customers-container li {
+    margin: 72px 24px 72px 24px;
+    
+    width: 168px;
+    height: 88px;
+  }
+
+
+  /*-----------------------footer*/
+  .footer {
+    display: flex;
+    flex-direction:row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    
+
+  }
+
+  .subscribe-tablet { display: flex;
+    flex-direction:row;
+    justify-content: space-between;
+   margin-top: 16px;
+  }
+  .blue-button-subscribe {
+   margin-left: 40px;
+  }
+.footer-flex{
+
+  width: 264px;
+  height: 112px;
+  text-align: left;
+
+}
+.footer-social-container {
+ 
+   width: 208px;
+  height: 80px;
+}
+.form-f { 
+
+    width: 453px;
+  height: 80px;
+}
+.footer {
+  display: flex;
+
+}
+.footer-title {
+  text-align: left;
+}
+
+
+}
+/*------------------------------------------
+
+@media screen and (min-width: 1158px) {
+ 
