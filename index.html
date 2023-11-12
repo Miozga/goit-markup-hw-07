@@ -31,6 +31,17 @@
       <div class="container container-header">
         <nav class="nav">
           <a class="logo" href="./index.html">Web<span class="studio">Studio</span></a>
+                    <!----------------------------------------------------HAMBURGER-->
+  
+  <button class="nav-button js-open-menu">
+    <span><svg class="icon-label"
+                    width="18"
+                    height="24">
+                   <use href="images/charm_menu-hamburger.svg#Vector" use></use>
+                   </svg></span>
+                  </button>
+    <!----------------------------------------------------------------->
+
           </nav>
           <nav class="nav">
           <ul class="menu">
@@ -38,7 +49,7 @@
             <li><a class="menu-item" href="./portfolio.html">Portfolio</a></li>
             <li><a class="menu-item" href="#">Contact</a></li>
           </ul>
-          
+      
         </nav>
         
         <ul class="contact ">
@@ -59,17 +70,7 @@
             >
           </li>
         </ul>
-        <!----------------------------------------------------HAMBURGER-->
   
-  <button class="nav-button js-open-menu">
-    <span><svg class="icon-label"
-                    width="18"
-                    height="24">
-                   <use href="images/charm_menu-hamburger.svg#Vector" use></use>
-                   </svg></span>
-                  </button>
-    <!----------------------------------------------------------------->
-
       </div>
      
     </header>
@@ -436,7 +437,8 @@
 
 
 
-    <footer class="footer container">
+    <footer class="footer">
+      <section class="container">
       <div class="footer-flex">
         <a class="logo logo-footer" href="index.html"
             >Web<span class="studio-footer">Studio</span></a>
@@ -494,7 +496,7 @@
             </svg>
           </button></div>
         </form>
-        
+        </section>
     </footer>
 
     <!-----------------------------------------------mobile menu hamnurger--->
@@ -503,13 +505,13 @@
     <button class="menu-button js-close-menu modal-close">
  <span>&#x2715;</span>
               </button>
-    <ul class="menu-mobile">
-      <ul>
-      <li><a href="./index.html">Agency</a></li>
-      <li><a href="./portfolio.html">Portfolio</a></li>
-      <li><a href="#">Contact</a></li>
+    <ul class="menu-mobile-nav">
+      <li><a href="./index.html"><h2>Agency</h2</a></li>
+      <li><a href="./portfolio.html"><h2>Portfolio</h2></a></li>
+      <li><a href="#"><h2>Contact</h2></a></li>
     </ul>
-              <ul class="mobile-menu ontact">
+    <div>
+   <ul class="mobile-menu-contact">
                 <li>
                   <a class="contact-item" href="mailto:info@devstudio.com">
   
@@ -519,6 +521,9 @@
                 <a class="contact-item" href="tel:+48111111111">+48 111 111 111</a>
                 </li>
               </ul>
+              </div>
+
+              <DIV>
               <ul class="social-container">
                 <li class="social-links">
                   <a href="#">
@@ -550,6 +555,7 @@
                   </a>
                 </li>
               </ul>
+              </DIV>
   </div>
      <script src="./js/modal.js"  defer></script>
  <script src="./js/mobile-menu.js" defer></script>

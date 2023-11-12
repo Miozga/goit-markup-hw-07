@@ -69,6 +69,8 @@ body {
 /* ============================================HEADER=========== */
 header {
   border-bottom: 1px solid #ececec;
+  padding-top: 23px;
+  padding-bottom: 23px;
 }
 
 .nav, .menu, .contact {
@@ -862,6 +864,17 @@ label > select {
     justify-content: space-between;
    margin-top: 16px;}
 
+/*---------------mobile menu--------*/
+.nav-button {
+  background-color: var(--color-white);
+  border:none;
+
+}
+ 
+
+
+
+
 /*-----------------------------------TABLET-*/
 @media screen and (min-width: 768px) {
   .container {
@@ -871,6 +884,10 @@ label > select {
     margin-left: auto;
     margin-right: auto;
   }
+  header {
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
   .menu,
   .contact {
     display: block;
@@ -939,10 +956,12 @@ justify-content: center;}
   flex-direction: row;
 flex-wrap: wrap;
 justify-content: center;
+column-gap: 24px;
+column-gap: 40px;
 }
 
 
-.paragraphs-container-secondary li {}
+.paragraphs-container-secondary li 
   .l-i-container {
     background-color: var(--background-white);
     height: auto;
@@ -957,26 +976,32 @@ justify-content: center;
   height: 360px;
 }
   .customers-container {
-    display: grid;
-  grid-template-columns: repeat(2, 1fr)
+
+  display: flex;
+flex-wrap: wrap;
+  justify-content: space-between;
+ row-gap: 72px;
+column-gap: 24px;
   }
   .customers-container li {
-    margin: 72px 24px 72px 24px;
+ 
     
     width: 168px;
     height: 88px;
   }
 
 
-  /*-----------------------footer*/
-  .footer {
+  /*-----------------------footer-------------*/
+  .container {
+    width: 768px;
+   
+
+  }.footer {
     display: flex;
     flex-direction:row;
     justify-content: space-around;
     flex-wrap: wrap;
-    
-
-  }
+   }
 
   .subscribe-tablet { display: flex;
     flex-direction:row;
@@ -1003,10 +1028,8 @@ justify-content: center;
     width: 453px;
   height: 80px;
 }
-.footer {
-  display: flex;
 
-}
+
 .footer-title {
   text-align: left;
 }
