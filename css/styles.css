@@ -862,7 +862,8 @@ label > select {
       .subscribe-tablet { display: flex;
     flex-direction:column;
     justify-content: space-between;
-   margin-top: 16px;}
+   margin-top: 16px;
+  align-items: center;}
 
 /*---------------mobile menu--------*/
 .nav-button {
@@ -870,14 +871,35 @@ label > select {
   border:none;
 
 }
- 
-
-
-
-
+ .menu-mobile-nav {
+  margin-bottom: 120px;
+  row-gap: 50px;
+ }
+.menu-mobile-nav li {
+  margin-left: 20px;
+  margin-top: 40px;
+}
+.mobile-menu-contact {display: flex;
+ flex-direction: column;
+  justify-content: flex-start;
+    margin-left: 20px;
+    row-gap: 20px;
+}
+.mobile-social-container{
+  margin-top: 40px;
+  justify-content: space-between;
+  padding: 0%;
+  margin-left: 20px;
+}
+.menu-mobile-nav li a:hover {
+    color: var(--link-color);
+  transition: var(--tr-transition);
+  position: relative;
+}
 /*-----------------------------------TABLET-*/
 @media screen and (min-width: 768px) {
   .container {
+
     max-width: 768px;
     padding-left: 15px;
     padding-right: 15px;
@@ -923,11 +945,17 @@ label > select {
   display: flex;
   flex-direction: row;
 flex-wrap: wrap;
-justify-content: center;}
+justify-content: center;
+column-count: 2;
+  column-gap: 24px;}
 .paragraphs-container li {
   width: 356px;
 
+ 
 }
+
+
+
   .paragraphs-title {
     width: 264px;
     display: flex;
@@ -979,13 +1007,13 @@ column-gap: 40px;
 
   display: flex;
 flex-wrap: wrap;
-  justify-content: space-between;
- row-gap: 72px;
-column-gap: 24px;
+  /*justify-content: space-between;*/
+
+column-count: 3; 
+row-gap: 72px;
+  column-gap: 24px;
   }
   .customers-container li {
- 
-    
     width: 168px;
     height: 88px;
   }
@@ -993,10 +1021,15 @@ column-gap: 24px;
 
   /*-----------------------footer-------------*/
   .container {
-    width: 768px;
-   
+    width: 768px;}
+    .container-footer {
+          display: flex;
+    flex-wrap: wrap;
 
-  }.footer {
+    }
+
+  .footer {
+   height: 456px;
     display: flex;
     flex-direction:row;
     justify-content: space-around;
@@ -1005,11 +1038,13 @@ column-gap: 24px;
 
   .subscribe-tablet { display: flex;
     flex-direction:row;
+    flex-wrap:nowrap;
     justify-content: space-between;
    margin-top: 16px;
   }
   .blue-button-subscribe {
    margin-left: 40px;
+   align-items: center;
   }
 .footer-flex{
 
@@ -1024,9 +1059,13 @@ column-gap: 24px;
   height: 80px;
 }
 .form-f { 
-
+  margin-left: 60px;
+flex-wrap: nowrap;
+justify-content: flex-end;
+align-items: flex-start;
     width: 453px;
   height: 80px;
+
 }
 
 
