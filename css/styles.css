@@ -69,8 +69,7 @@ body {
 /* ============================================HEADER=========== */
 header {
   border-bottom: 1px solid #ececec;
-  padding-top: 23px;
-  padding-bottom: 23px;
+  padding: 0;
 }
 
 .nav, .menu, .contact {
@@ -804,6 +803,7 @@ label > select {
 .nav-button {
   display: flex;
   justify-content: flex-end;
+  margin-top: 10px;
 }
 
 .menu-wrapper {
@@ -910,8 +910,7 @@ label > select {
     margin-right: auto;
   }
   header {
-  padding-top: 24px;
-  padding-bottom: 24px;
+  padding: 0;
 }
   .menu,
   .contact {
