@@ -79,10 +79,6 @@ header {
   justify-content: space-between;
 }
 
-.nav {
-  display: flex;
-  column-gap: ;
-}
 .logo {
   font-family: var(--secondary-font);
   font-weight: 700;
@@ -691,7 +687,9 @@ select {
   background-color: var(--color-blue-button);
   border-radius: 4px;
   box-shadow: 1px 4px 6px 0px var(--color-black) 0.16;
-  padding-bottom: 5px;
+}
+.blue-button-send {
+  margin-bottom: 10px;
 }
 .subscribe-footer {
   margin-top: 100px;
@@ -1069,6 +1067,9 @@ label > select {
 /*------------------------------------------*/
 
 @media screen and (min-width: 1158px) {
+  .contact {
+    visibility: visible;
+  }
   .container {
     max-width: 1200px;
     padding-left: 15px;
@@ -1085,9 +1086,26 @@ label > select {
     justify-content: ;
   }
   .paragraphs-container {
-  gap: 30px;
-  display: flex;
-  justify-content: space-between;
-  flex-direction: row;
-  flex-wrap: nowrap;
+    gap: 30px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+  .paragraphs-container-secondary {
+    flex-wrap: nowrap;
+  }
+  .custumers-container {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .custumers-container li {
+    display: flex;
+    justify-content: space-between;
+  }
+  .customers-box {
+    width: 1128px;
+  }
 }
