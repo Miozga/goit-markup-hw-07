@@ -1108,4 +1108,28 @@ label > select {
   .customers-box {
     width: 1128px;
   }
+  .container-footer {
+    width: 1128px;
+  }
+  .container-footer {
+    align-items: baseline;
+  }
+  .footer {
+    height: auto;
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+  .input-email {
+    width: auto;
+  }
+  .form-f {
+    gap: 0;
+  }
+  .mobile-menu-contact {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-left: 20px;
+    row-gap: 20px;
+  }
 }
