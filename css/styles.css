@@ -1130,12 +1130,18 @@ label > select {
     flex-direction: row;
     justify-content: flex-end;
   }
-  .nav-desktop {margin-left: -300px;}
-
+  .nav-desktop {
+    margin-left: -300px;
+  }
+}
 
 @media screen and (max-width: 428px) {
   .container {
-    width: 320px;}
+    width: 320px;
   }
-
-
+}
+@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .main-section {
+    background-image: url();
+  }
+}
