@@ -157,7 +157,7 @@ header {
 /* =====================================INDEX============== */
 .main-section {
   background-image: radial-gradient(rgba(47, 48, 58, 0.4) 100%, rgba(255, 255, 255, 0) 0%),
-    url(../images/background.jpg);
+    url('../images/background.jpg');
   max-width: 1600px;
   margin-left: auto;
   margin-right: auto;
@@ -1139,9 +1139,54 @@ label > select {
   .container {
     width: 320px;
   }
-}
-@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-  .main-section {
-    background-image: url();
+  .section {
+    width: 320px;
+  }
+  .paragraphs-title {
+    width: 290px;
+  }
+  .paragraphs-container-secondary {
+    align-items: center;
+  }
+  .form-f {
+    width: 320px;
+  }
+  .input-email {
+    width: auto;
+  }
+  .section-title {
+    width: 320px;
+    display: flex;
+  }
+  .footer {
+    width: 100%;
+  }
+  .modal-body {
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .customers-box {
+    flex-wrap: wrap;
+  }
+  .box-customers {
+    width: 140px;
+  }
+
+  .custumers-container {
+    width: 320px;
+    justify-content: flex-start;
+    column-gap: 5px;
+  }
+  .customers-box {
+    padding-left: 10px;
+  }
+  .form-f {
+    margin-left: -15px;
   }
 }
+/*@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .main-section {
+    background-image: url('../images/backgroundx2.jpg');
+  }*/
