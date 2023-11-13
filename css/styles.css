@@ -1068,7 +1068,8 @@ label > select {
 
 @media screen and (min-width: 1158px) {
   .contact {
-    visibility: visible;
+    display: flex;
+    flex-direction: row;
   }
   .container {
     max-width: 1200px;
@@ -1126,10 +1127,15 @@ label > select {
     gap: 0;
   }
   .mobile-menu-contact {
-    display: flex;
     flex-direction: row;
     justify-content: flex-end;
-    margin-left: 20px;
-    row-gap: 20px;
   }
-}
+  .nav-desktop {margin-left: -300px;}
+
+
+@media screen and (max-width: 428px) {
+  .container {
+    width: 320px;}
+  }
+
+
