@@ -1165,8 +1165,25 @@ label > select {
   }
   .customers-box {
     width: 320px;
+    padding-left: 0;
   }
   .modal-body {
-    width: 300px;
+    width: 290px;
+  }
+  .customers-container {
+    padding-bottom: 10px;
+    margin-right: 10px;
+  }
+  .custumers-container li {
+    width: 140px;
+    height: auto;
+  }
+  .box-customers {
+    width: 130px;
+  }
+  .mobile-social-container,
+  .menu-mobile-nav li,
+  .mobile-menu-contact {
+    margin-left: 0;
   }
 }
