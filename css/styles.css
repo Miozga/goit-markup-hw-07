@@ -1141,54 +1141,11 @@ label > select {
 }
 
 @media screen and (max-width: 428px) {
-  /* .container {
-    width: 320px;
-  }
-  .section {
-    width: 320px;
-  }
-  .paragraphs-title {
-    width: 290px;
-  }
-  .paragraphs-container-secondary {
-    align-items: center;
-  }
-  .form-f {
-    width: 320px;
-  }
-  .input-email {
-    width: auto;
-  }
-  .section-title {
-    width: 320px;
-    display: flex;
-  }
+  .container,
+  .section,
   .footer {
-    width: 100%;
+    min-width: 320px;
   }
-  .modal-body {
-    width: 300px;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+  .paragraphs-container li {
   }
-  .customers-box {
-    flex-wrap: wrap;
-  }
-  .box-customers {
-    width: 140px;
-  }
-
-  .custumers-container {
-    width: 320px;
-    justify-content: flex-start;
-    column-gap: 5px;
-  }
-  .customers-box {
-    padding-left: 10px;
-  }
-  .form-f {
-    margin-left: -15px;
-  }
-*/
 }
