@@ -1141,11 +1141,11 @@ label > select {
 }
 
 @media screen and (max-width: 428px) {
-  .container,
-  .section,
-  .footer {
-    min-width: 320px;
+  .container {
+    width: 100%;
   }
-  .paragraphs-container li {
+
+  .paragraphs-title {
+    width: 100%;
   }
 }
