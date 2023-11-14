@@ -162,6 +162,11 @@ header {
   margin-left: auto;
   margin-right: auto;
 }
+@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .main-section {
+    background-image: url('../images/backgroundx2.jpg');
+  }
+}
 .container-slogan {
   text-align: center;
 }
@@ -1136,7 +1141,7 @@ label > select {
 }
 
 @media screen and (max-width: 428px) {
-  .container {
+  /* .container {
     width: 320px;
   }
   .section {
@@ -1185,8 +1190,5 @@ label > select {
   .form-f {
     margin-left: -15px;
   }
+*/
 }
-/*@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-  .main-section {
-    background-image: url('../images/backgroundx2.jpg');
-  }*/
