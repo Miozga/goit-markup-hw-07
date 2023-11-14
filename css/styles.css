@@ -1148,4 +1148,25 @@ label > select {
   .paragraphs-title {
     width: 100%;
   }
+  .main-section {
+    height: 500px;
+  }
+  .slogan {
+    padding-top: 40px;
+  }
+  .paragraphs-container-secondary {
+    align-items: center;
+  }
+  .input-email {
+    width: 200px;
+  }
+  .form-f {
+    width: 320px;
+  }
+  .customers-box {
+    width: 320px;
+  }
+  .modal-body {
+    width: 300px;
+  }
 }
