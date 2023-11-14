@@ -772,6 +772,10 @@ label > select {
   border-color: var(--color-blue);
 }
 .icon-label {
+  left: 16px;
+  top: 7px;
+}
+.icon-label-modal {
   position: absolute;
   left: 16px;
   top: 7px;
