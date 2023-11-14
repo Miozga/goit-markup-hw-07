@@ -772,9 +772,11 @@ label > select {
   border-color: var(--color-blue);
 }
 .icon-label {
+  position: absolute;
   left: 16px;
   top: 7px;
 }
+
 .icon-label-person {
   position: absolute;
   left: 16px;
